@@ -21,6 +21,8 @@ The script is structured as follows:
   - `0` indicates that tomorrow's closing price is expected to be lower or the same.
 - This binary classification setup allows the model to predict whether the stock price will increase or decrease.
 
+![image](https://github.com/user-attachments/assets/916822dc-f26a-4bc3-9bc1-36f40f61b9a1)
+
 ### Initial Model Training
 
 - A `Random Forest Classifier` is used for the initial model. The following parameters are used:
@@ -46,6 +48,8 @@ The script is structured as follows:
   - If the probability is ≥ 0.6, the model predicts a price increase (`1`).
   - If the probability is < 0.6, the model predicts a price decrease (`0`).
 
+![image](https://github.com/user-attachments/assets/33963838-be03-4410-a215-f464d698779d)
+
 ### Backtesting
 
 - The `backtest()` function simulates how the model would have performed historically by:
@@ -61,4 +65,5 @@ The script is structured as follows:
 
 This script demonstrates how to use a `Random Forest Classifier` to predict stock price movements. The model is enhanced by feature engineering, and its performance is evaluated through backtesting. While the model makes predictions based on historical data, it should be noted that real-world market behavior is influenced by a myriad of factors not captured in this model.
 
-**Note:** This model is a simplification and should be used with caution. Incorporating additional data sources, such as macroeconomic indicators or sentiment analysis, could further improve the model's performance.
+**Note:** This model is a simplification and should be used with caution. Incorporating additional data sources, such as macroeconomic indicators or sentiment analysis, could further improve the model's performance. 
+*Please also note that both jupyter and python files have been provided* as jupyter makes it much easier for visualizing data, simple code is in the python file with comments as needed.

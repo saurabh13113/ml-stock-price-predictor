@@ -127,7 +127,11 @@ def backtest(data, model, predictors, start=2500, step=250):
 predictions = backtest(sp500, model, new_predictors)
 
 # Print the combined DataFrame with actual and predicted values
-print(predictions)
+# print(predictions)
+
+# Print today's stock price
+today_price = sp500.iloc[-1]["Close"]
+print(f"Today's stock price: {today_price:.2f} USD")
 
 # Print statement to indicate whether tomorrow's stock price will increase or decrease
 # Based on the last prediction, determine the expected movement of the stock price.
